@@ -1,0 +1,62 @@
+.u-padding {
+
+  // p-home-about--wrap
+  &--00 {
+    padding-top: pxtovw-sp(150);
+    padding-bottom: pxtovw-sp(75);
+    @include breakpoint( pc ) {
+      padding-top: pxtovw-pc(190);
+      padding-bottom: pxtovw-pc(110);
+    }
+  }
+
+  // 円ボックス
+  &--00-2 {
+    @include breakpoint( pc ) {
+      padding-top: pxtovw-pc(113);
+      padding-bottom: pxtovw-pc(293);
+    }
+  }
+
+  // works
+  &--01 {
+    padding-top: pxtovw-sp(145);
+    @include breakpoint( pc ) {
+      padding-top: pxtovw-pc(100);
+      padding-bottom: pxtovw-pc(99);
+    }
+  }
+
+  // flow
+  &--02 {
+    padding-top: pxtovw-sp(90);
+    @include breakpoint( pc ) {
+      padding-top: pxtovw-pc(145);
+      padding-bottom: pxtovw-pc(0);
+    }
+  }
+
+  // price
+  &--03 {
+    padding-top: pxtovw-sp(126);
+    padding-bottom: pxtovw-sp(168);
+    @include breakpoint( pc ) {
+      padding-top: pxtovw-pc(220);
+      // padding-top: pxtovw-pc(345);
+      padding-bottom: pxtovw-pc(233);
+    }
+  }
+
+
+  // contact
+  &--04 {
+    padding-top: pxtovw-sp(126);
+    padding-bottom: pxtovw-sp(168);
+    @include breakpoint( pc ) {
+      padding-top: pxtovw-pc(210);
+      padding-bottom: pxtovw-pc(443);
+    }
+  }
+}
+
+
