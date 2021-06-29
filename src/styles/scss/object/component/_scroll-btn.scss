@@ -1,7 +1,7 @@
 // ------------------------------
 // 下へスクロールするボタン
 // ------------------------------
-.c-scroll {
+.c-scroll-btn {
 
   span {
     font-size: 0;//テキスト非表示
@@ -9,14 +9,19 @@
     &::before {
       position: absolute;
       content: '';
-      top: 81%;
-      left: 47%;
+      top: 86%;
+      left: 48.5%;
       width: pxtovw-sp(22);
       height: pxtovw-sp(22);
       border-top: 1px solid $main-color;
       border-right: 1px solid $main-color;
       -webkit-transform: rotate(135deg);
       transform: rotate(135deg);
+
+      @include breakpoint( pc ) {
+        width: pxtovw-pc(35);
+        height: pxtovw-pc(35);
+      }
     }
   }
 }

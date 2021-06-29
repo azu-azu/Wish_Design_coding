@@ -10,21 +10,23 @@
   &--02 {
     margin-top: pxtovw-sp(80);
     @include breakpoint( pc ) {
-      margin-top: pxtovw-pc(91);
+      margin-top: pxtovw-pc(84);
     }
   }
 
+  // その言葉でデザインを作ります
   &--04 {
     margin-top: pxtovw-sp(47);
-    // @include breakpoint( pc ) {
-    //   margin-top: pxtovw-pc(-220);
-    // }
+    @include breakpoint( pc ) {
+      margin-top: pxtovw-pc(0);
+    }
   }
+
 
   &--05 {
     // margin-top: pxtovw-sp(145);
     @include breakpoint( pc ) {
-      margin-top: pxtovw-pc(60);
+      margin-top: pxtovw-pc(62);
     }
   }
 
@@ -62,8 +64,6 @@
       margin-top: pxtovw-pc(100);
     }
   }
-
-
 
   &--13 {
     margin-top: pxtovw-sp(45);
