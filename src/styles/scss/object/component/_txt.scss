@@ -36,6 +36,7 @@
       }
 
 
+    // その言葉でデザインを作ります
     &--about {
       text-align: center;
       font-size: pxtovw-sp(17);
@@ -44,9 +45,10 @@
       clear:right;//上のボックスにfloatを使っているため
 
       @include breakpoint( pc ) {
-        position: absolute;
-        top: 38.1%;
-        left: 30.7%;
+        // display: block;
+        // position: absolute;
+        // top: 263%;
+        // left: 30.7%;
 
         font-size: pxtovw-pc(25);
         letter-spacing: .77rem;

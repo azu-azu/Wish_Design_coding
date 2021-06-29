@@ -1,15 +1,18 @@
 .p-mainvisual {
-  height: pxtovw-sp(667);
   width: 100%;
+  height: pxtovw-sp(667);
 
   background-image: url(../images/home_mainvisual_sp.svg);
   background-position-x: 0%;
   background-position-y: -7%;
-  object-fit: cover;
+  background-size: cover;
 
   @include breakpoint( pc ) {
+    width: 100%;
     height: pxtovw-pc(800);
-    background-image: url(../images/home_mainvisual_pc.svg);
-    background-position-y: 94%;
+    background-image: url(../images/home_mainvisual_pc.png);
+    background-position-x: center;
+    background-position-y: 3%;
+    background-size: cover;
 	}
 }
