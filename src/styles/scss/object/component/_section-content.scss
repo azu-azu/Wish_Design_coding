@@ -1,5 +1,6 @@
-.section-content {
+// scrollify実行のためのmargin設定
 
+.c-section-content {
   @include breakpoint( pc ) {
     margin: 0 auto;
   }
