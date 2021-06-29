@@ -141,7 +141,7 @@ var option = {
   easing: "swing", // イージングを指定(jQueryのanimation)
   scrollSpeed: 600, // スクロール時の速度
   scrollbars: true, // スクロールバーを表示するか：falseにするとオーバーフローコンテンツのスクロールができなくなるので注意
-  setHeights: false,//CSSでセクションの高さを設定する場合はfalseにする
+  setHeights: true,//CSSでセクションの高さを設定する場合はfalseにする
 
   offset : 0, //各セクションの位置をオフセットするピクセル単位の距離
   standardScrollElements: "",//""内にセクション名を記述すれば、そこだけ標準のスクロール動作になる
