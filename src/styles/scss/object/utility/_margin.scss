@@ -14,12 +14,12 @@
     }
   }
 
-  // &--04 {
-  //   margin-top: pxtovw-sp(47);
-  //   @include breakpoint( pc ) {
-  //     margin-top: pxtovw-pc(-220);
-  //   }
-  // }
+  &--04 {
+    margin-top: pxtovw-sp(47);
+    // @include breakpoint( pc ) {
+    //   margin-top: pxtovw-pc(-220);
+    // }
+  }
 
   &--05 {
     // margin-top: pxtovw-sp(145);
@@ -79,7 +79,6 @@
     }
   }
 
-
   &--16 {
     margin-top: pxtovw-sp(45);
     @include breakpoint( pc ) {
@@ -95,10 +94,9 @@
   }
 
   &--18 {
-    margin-top: pxtovw-sp(68);
+    margin-top: pxtovw-sp(70);
     @include breakpoint( pc ) {
-      // margin-top: pxtovw-pc(173);
-      margin-top: pxtovw-pc(200);
+      margin-top: pxtovw-pc(173);
     }
   }
 }
