@@ -1,10 +1,12 @@
 .p-scroll {
-  scroll-snap-type: y mandatory;
-  overflow: auto;
-  height: 100vh;
-
-  &--area {
-    scroll-snap-align: start;
+  @include breakpoint( pc ) {
+    scroll-snap-type: y mandatory;
+    overflow: auto;
     height: 100vh;
+
+    &--area {
+      scroll-snap-align: start;
+      height: 100vh;
+    }
   }
 }
