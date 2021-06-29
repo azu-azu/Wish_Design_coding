@@ -1,0 +1,6 @@
+.section-content {
+
+  @include breakpoint( pc ) {
+    margin: 0 auto;
+  }
+}
