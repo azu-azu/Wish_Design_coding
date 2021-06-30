@@ -127,11 +127,7 @@ jQuery(function($) {
 
 
 
-// 円ボックスの文字サイズ：親要素に合わせて伸縮
-fitty('[js-fitty]', {
-  maxSize: 15,
-  minSize: 5,
-});
+
 
 
 
@@ -142,12 +138,12 @@ var option = {
   scrollSpeed: 600, // スクロール時の速度
   scrollbars: true, // スクロールバーを表示するか：falseにするとオーバーフローコンテンツのスクロールができなくなるので注意
   setHeights: true,//CSSでセクションの高さを設定する場合はfalseにする
+  touchScroll:false,//スマホではオフにする。デフォルトではTrue
 
   offset : 0, //各セクションの位置をオフセットするピクセル単位の距離
   standardScrollElements: "",//""内にセクション名を記述すれば、そこだけ標準のスクロール動作になる
   overflowScroll: true,//セクション内のオーバーフローしたコンテンツをスクロールできるかどうかを定義するブール値。デフォルトではTrue。
   updateHash: true,//スクロール時アドレスバーのURL末尾に「#○○」がつく。デフォルトではTrue
-  touchScroll:true,//タッチスクロールイベントを処理するかどうかを定義する。デフォルトではTrue
   before:function() {},//セクションがmoveメソッドを介してスクロールされる前に発生するコールバック
   after:function() {},//新しいセクションがスクロールされた後に発生するコールバック
   afterResize:function() {},//ウィンドウのサイズが変更された後に発生するコールバック
@@ -160,8 +156,25 @@ $(function() {
 
 
 
+// ボタンを押すと、.section-scrollへ移動
+$(document).ready(function () {
+  $(".section-scroll").sectionScroller({
+      scrollerButton: "#section-scroller-button",
+      scrollType: "easeInOutExpo", // requires jQuery Easing Plugin
+      scrollDuration: 600,
+  });
+});
 
 
+
+
+
+
+// 文字サイズ：親要素に合わせて伸縮
+// fitty('[js-fitty]', {
+//   maxSize: 15,
+//   minSize: 8,
+// });
 
 
 

@@ -19,6 +19,7 @@
 
   // その言葉でデザインを作ります
   &--00-3 {
+    padding-top: pxtovw-sp(47);
     @include breakpoint( pc ) {
       padding-top: pxtovw-pc(65);
       padding-bottom: pxtovw-pc(146.5);

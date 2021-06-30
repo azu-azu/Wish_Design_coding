@@ -104,7 +104,7 @@
 // ------------------------------
 .p-btn--menu--close {
   @extend .p-btn--menu;
-  left: 37%;
+  left: 46%;
 
   @include breakpoint( pc ) {
     margin-top: pxtovw-pc(62);

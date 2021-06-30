@@ -45,11 +45,6 @@
       clear:right;//上のボックスにfloatを使っているため
 
       @include breakpoint( pc ) {
-        // display: block;
-        // position: absolute;
-        // top: 263%;
-        // left: 30.7%;
-
         font-size: pxtovw-pc(25);
         letter-spacing: .77rem;
         text-indent: .77rem;
