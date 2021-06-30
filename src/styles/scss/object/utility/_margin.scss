@@ -14,14 +14,6 @@
     }
   }
 
-  // その言葉でデザインを作ります
-  &--04 {
-    margin-top: pxtovw-sp(47);
-    @include breakpoint( pc ) {
-      margin-top: pxtovw-pc(0);
-    }
-  }
-
 
   &--05 {
     // margin-top: pxtovw-sp(145);
