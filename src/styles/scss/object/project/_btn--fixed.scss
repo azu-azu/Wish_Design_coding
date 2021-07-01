@@ -9,7 +9,7 @@
   border-radius: 50%;
   position: fixed;
   bottom: 5rem;
-  right: -0.5%;
+  right: 8.5%;
   top: unset;
   left: unset;
   z-index: 99;
@@ -38,7 +38,7 @@
 
   p {
     grid-row: 2;
-    font-size: pxtovw-sp(1);
+    font-size: pxtovw-sp(8);
     align-self: flex-start;
 
     @include breakpoint( pc ) {

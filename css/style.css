@@ -3,6 +3,10 @@
   font-size: 62.5%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
   overflow-y: inherit;
@@ -135,6 +139,7 @@ body.is-open {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  top: unset;
   background: #F4F4F4;
   box-shadow: 5px 5px 8px 1px #b9b9b9, -5px -5px 8px -1px #ffffff;
   border-radius: 40px;
@@ -899,7 +904,7 @@ body.is-open {
   border-radius: 50%;
   position: fixed;
   bottom: 5rem;
-  right: -0.5%;
+  right: 8.5%;
   top: unset;
   left: unset;
   z-index: 99;
@@ -926,7 +931,7 @@ body.is-open {
 
 .p-btn--fixed p {
   grid-row: 2;
-  font-size: 0.26667vw;
+  font-size: 2.13333vw;
   align-self: flex-start;
 }
 
@@ -1014,6 +1019,12 @@ body.is-open {
     width: 1.64062vw;
     height: 0.03906vw;
   }
+  @-moz-document url-prefix() {
+    .p-btn--menu span, .p-btn--menu--close span {
+      width: 1.64062vw;
+      height: .1vw;
+    }
+  }
 }
 
 .p-btn--menu span::before, .p-btn--menu--close span::before, .p-btn--menu span::after, .p-btn--menu--close span::after {
@@ -1030,6 +1041,12 @@ body.is-open {
   .p-btn--menu span::before, .p-btn--menu--close span::before, .p-btn--menu span::after, .p-btn--menu--close span::after {
     width: 1.64062vw;
     height: 0.03906vw;
+  }
+  @-moz-document url-prefix() {
+    .p-btn--menu span::before, .p-btn--menu--close span::before, .p-btn--menu span::after, .p-btn--menu--close span::after {
+      width: 1.64062vw;
+      height: .1vw;
+    }
   }
 }
 

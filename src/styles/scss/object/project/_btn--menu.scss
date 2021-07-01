@@ -52,6 +52,7 @@
   // 三本線
   span {
     font-size: 0;//htmlのテキストを非表示
+
     width: pxtovw-sp(17.92);
     height: pxtovw-sp(.5);
     background: $main-color;
@@ -61,6 +62,12 @@
     @include breakpoint( pc ) {
       width: pxtovw-pc(21);
       height: pxtovw-pc(.5);
+
+      // firefox用
+      @-moz-document url-prefix() {
+          width: pxtovw-pc(21);
+          height: .1vw;
+      }
     }
 
     &::before,
@@ -76,6 +83,12 @@
       @include breakpoint( pc ) {
         width: pxtovw-pc(21);
         height: pxtovw-pc(.5);
+
+        // firefox用
+        @-moz-document url-prefix() {
+          width: pxtovw-pc(21);
+          height: .1vw;
+      }
       }
     }
 
