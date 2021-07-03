@@ -1,0 +1,30 @@
+.p-door-404 {
+  @extend %boxbase;
+
+  width: pxtovw-sp(139);
+  height: pxtovw-sp(224);
+  border-radius: 10px;
+  pointer-events: none;
+
+  position: absolute;
+  top: 20.5%;
+  left: 31.7%;
+
+
+  // 404
+  &__num {
+    font-size: pxtovw-sp(17);
+    position: absolute;
+    top: 15%;
+    left: 33%;
+    letter-spacing: .5rem;
+    text-indent: .5rem;
+  }
+
+  // お探しのページはありません。
+  &__txt {
+    letter-spacing: .55rem;
+    text-indent: .55rem;
+    text-align: center;
+  }
+}

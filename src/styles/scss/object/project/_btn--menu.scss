@@ -50,14 +50,12 @@
   }
 
   // 三本線
-  span {
-    font-size: 0;//htmlのテキストを非表示
-
+  span,
+  span::before,
+  span::after {
     width: pxtovw-sp(17.92);
     height: pxtovw-sp(.5);
-    background: $main-color;
-    background-size: auto .1px;
-    transition: transform 0.2s;
+    transition: transform .2s;
 
     @include breakpoint( pc ) {
       width: pxtovw-pc(21);
@@ -69,27 +67,20 @@
           height: .1vw;
       }
     }
+  }
+
+  span {
+    font-size: 0;//htmlのテキストを非表示
+    background: $main-color;
+    background-size: auto .1px;
 
     &::before,
     &::after {
       content: "";
-      width: pxtovw-sp(17.92);
-      height: pxtovw-sp(.5);
       background: $main-color;
       position: absolute;
       display: block;
-      transition: transform 0.2s;
-
-      @include breakpoint( pc ) {
-        width: pxtovw-pc(21);
-        height: pxtovw-pc(.5);
-
-        // firefox用
-        @-moz-document url-prefix() {
-          width: pxtovw-pc(21);
-          height: .1vw;
-      }
-      }
+      transition: transform .2s;
     }
 
     &::before {

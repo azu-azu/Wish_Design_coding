@@ -34,6 +34,7 @@
 @import "object/component/box";
 @import "object/component/gmenu";
 @import "object/component/scroll-btn";
+@import "object/component/img-item";
 @import "object/component/copyright";
 
 // -----------------------------------------------------------------
@@ -41,6 +42,9 @@
 // -----------------------------------------------------------------
 @import "object/project/mainvisual";
 @import "object/project/page-ttl";
+@import "object/project/ttl--content";
+@import "object/project/ttl--site";
+@import "object/project/txt--mainvisual";
 @import "object/project/copyright";
 @import "object/project/gmenu";
 @import "object/project/hamburger";
@@ -50,7 +54,11 @@
 @import "object/project/btn--base";
 @import "object/project/btn--fixed";
 @import "object/project/btn--menu";
+@import "object/project/btn--menu-sub";
+@import "object/project/btn--top";
 @import "object/project/scroll";
+@import "object/project/price-tbl";
+@import "object/project/door-404";
 
 // -----------------------------------------------------------------
 // Utility

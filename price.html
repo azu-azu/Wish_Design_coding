@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+
+    <!-- レスポンシブ対応：デバイスの幅を使うことを指定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wish Design</title>
+    <meta name="description" content="説明文を記述">
+    <meta name="keywords" content="検索ワードを記述（５つまで）">
+
+    <!-- グーグルフォント -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+
+    <!-- フォントオーサム -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- スリックCSS -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+    <!-- モーダルウィンドウcss -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+
+    <!-- 自作CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+  </head>
+  <!-- ◇----------------------------------------------------------------------------------------------◇ -->
+
+  <body class="price">
+    <div class="l-container">
+      <header class="l-header u-display-between">
+        <span id="js-ttl"><a href="index.html" class="p-ttl--site">Wish Design</a></span>
+        <button class="p-btn--menu-sub js-btn-menu u-grid">
+          <p>Menu</p><span>サイドバーを開く</span>
+        </button><!-- spanの文字はリーダブルのため -->
+      </header>
+
+      <!-- メインビジュアル -->
+      <figure class="l-mainvisual p-mainvisual" data-section-name="section1">
+        <div class="c-section-content">
+          <div class="p-page-ttl">
+            <h1 class="p-page-ttl__heading">Price
+              <div class="p-page-ttl__heading__shadow"></div>
+            </h1>
+            <div class="p-page-ttl__txt">料金について
+              <div class="p-page-ttl__txt__shadow"></div>
+            </div>
+          </div>
+          <p class="p-txt--mainvisual">
+            WishDesignでは明朗会計を目指しております。<br>
+            「なんかわからないけど見積もりが高い」<br>
+            ということがないように料金表を作らせていただきました。
+          </p>
+        </div>
+      </figure>
+      <!-- ◇----------------------------------------------------------------------------------------------◇ -->
+      <main class="l-main">
+
+        <article class="p-price">
+          <section class="p-price--hearing">
+            <h2 class="p-ttl--content">コーポレートサイト</h2>
+            <p class="c-txt--content u-margin--01">
+              ご予算５０万円〜<br>
+              納期目安 １ヶ月〜１ヶ月半
+            </p>
+          </section>
+
+          <section class="p-price--oundmedia">
+            <h2 class="p-ttl--content">オウンドメディア</h2>
+            <p class="c-txt--content u-margin--01">
+              ご予算７０万円〜<br>
+              納期目安 １ヶ月半〜２ヶ月半
+            </p>
+          </section>
+
+          <section class="p-price--salon">
+            <h2 class="p-ttl--content">美容サロンサイト</h2>
+            <p class="c-txt--content u-margin--01">
+              ご予算４０万円〜<br>
+              納期目安 １ヶ月
+            </p>
+          </section>
+
+          <section class="p-price--breakdown">
+            <h2 class="p-ttl--content">項目内訳</h2>
+            <p class="c-txt--content u-margin--01">
+              タップすると詳細が見えます
+            </p>
+            <!-- <a href="images/wishdesign_price_sp.png" class="js-modal c-img-item"> -->
+            <a href="images/wishdesign_price_pc.png" class="js-modal c-img-item">  
+              <img src="images/wishdesign_price_sp.png"
+              srcset="images/wishdesign_price_sp.png 670w,
+                      images/wishdesign_price_pc.png 1728w"
+              sizes="(max-width:480px) 375px, 100vw" alt=""></a>
+
+            <!-- <iframe class="p-price-tbl" src="images/wishdesign_price.pdf" width="100%" height="100%"></iframe> -->
+          </section>
+
+          <button class="p-btn--base u-grid u-margin--11">
+            <p>お取引の流れへ</p><span>リンクページへ移動</span>
+          </button>
+        </article>
+      </main>
+
+      <footer class="l-footer">
+        <button class="p-btn--fixed u-grid">
+          <p>Top</p><span>上へ戻る</span>
+        </button>
+
+        <small class="c-copyright u-margin--18 u-display-center">&copy; 2021 Wish Design</small>
+      </footer>
+    </div>
+
+
+    <!-- ◇----------------------------------------------------------------------------------------------◇ -->
+    <!-- サイドメニューが表示されたときの背景画面 -->
+    <div class="c-box--overlay"></div>
+
+    <!-- サイドメニュー -->
+    <aside class="l-sidebar">
+
+      <!-- ナビゲーション -->
+      <nav class="l-sidebar__nav">
+        <!-- 閉じるボタン -->
+        <button class="p-btn--menu--close js-btn-close">
+          <div class="p-btn--menu--close__inner u-grid">
+            <!-- インナーにしないとサイドバーが崩れるため -->
+            <p>Close</p><span>ボタン</span>
+          </div>
+        </button>
+        <!-- メニュー -->
+        <ul class="c-gmenu u-wrap--align">
+          <li><a href="#">Top</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Works</a></li>
+          <li><a href="#">Flow</a></li>
+          <li><a href="#">Price</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Media</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+
+    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/fitty.min.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="js/sectionscroller.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>

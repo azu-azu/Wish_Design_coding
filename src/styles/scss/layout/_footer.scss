@@ -1,12 +1,15 @@
 .l-footer {
 	text-align: center;
 	padding-bottom: 50px;
+}
 
-	@include breakpoint( tablet ) {
-	}
-	@include breakpoint( pc ) {
-	}
-	@include breakpoint( wide ) {
+.page404 {
+	.l-footer {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		padding-bottom: 70px;
 	}
 }
+
 

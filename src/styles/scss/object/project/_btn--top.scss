@@ -1,0 +1,19 @@
+.p-btn--top {
+  @extend .p-btn--base;
+  position: absolute;
+  top: 71.2%;
+
+  width: pxtovw-sp(143);
+  height: pxtovw-sp(32);
+
+  p {
+    letter-spacing: .4rem;
+    text-indent: .4rem;
+    text-align: center;
+  }
+
+  // 矢印
+  span {
+    display: none;
+  }
+}
