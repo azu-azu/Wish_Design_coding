@@ -1,7 +1,15 @@
 // scrollify実行のためのmargin設定
-
 .c-section-content {
   @include breakpoint( pc ) {
     margin: 0 auto;
+  }
+}
+
+.price {
+  .c-section-content {
+    height: 100%;
+    @include breakpoint( pc ) {
+      margin: 0 auto;
+    }
   }
 }

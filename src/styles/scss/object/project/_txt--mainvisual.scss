@@ -1,6 +1,6 @@
 .p-txt--mainvisual {
   position: absolute;
-  top: 67%;
+  top: 24.7%;
   margin-right: pxtovw-sp(20);
   margin-left: pxtovw-sp(20);
   text-align: center;
@@ -9,4 +9,14 @@
   line-height: 1.75;
   letter-spacing: .44rem;
   text-indent: .44rem;
+
+  @include breakpoint( pc ) {
+    font-size: pxtovw-pc(15);
+    line-height: 2.2;
+    letter-spacing: .44rem;
+    text-indent: .44rem;
+
+    top: 13.6%;
+    left: 24.3%;
+  }
 }

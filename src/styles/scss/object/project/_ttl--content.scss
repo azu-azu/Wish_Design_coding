@@ -16,3 +16,12 @@
     }
   }
 }
+
+.price {
+  .p-ttl {
+    &--content {
+      letter-spacing: .5rem;
+      text-indent: .5rem;
+    }
+  }
+}

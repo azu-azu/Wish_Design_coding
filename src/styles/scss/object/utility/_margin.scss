@@ -14,23 +14,43 @@
     }
   }
 
-
-  &--05 {
+  &--03 {
     // margin-top: pxtovw-sp(145);
     @include breakpoint( pc ) {
       margin-top: pxtovw-pc(62);
     }
   }
 
-  &--06 {
+  &--04 {
     margin-top: pxtovw-sp(-26);
     @include breakpoint( pc ) {
       margin-top: pxtovw-pc(40);
     }
   }
 
-  &--07 {
+  &--05 {
     margin-top: 0;
+    @include breakpoint( pc ) {
+      margin-top: pxtovw-pc(100);
+    }
+  }
+
+  &--06 {
+    margin-top: pxtovw-sp(45);
+    @include breakpoint( pc ) {
+      margin-top: pxtovw-pc(60);
+    }
+  }
+
+  &--07 {
+    margin-top: pxtovw-sp(75);
+    @include breakpoint( pc ) {
+      margin-top: pxtovw-pc(60);
+    }
+  }
+
+  &--08 {
+    margin-top: pxtovw-sp(83);
     @include breakpoint( pc ) {
       margin-top: pxtovw-pc(100);
     }
@@ -39,63 +59,82 @@
   &--09 {
     margin-top: pxtovw-sp(45);
     @include breakpoint( pc ) {
-      margin-top: pxtovw-pc(60);
-    }
-  }
-
-  &--10 {
-    margin-top: pxtovw-sp(75);
-    @include breakpoint( pc ) {
-      margin-top: pxtovw-pc(60);
-    }
-  }
-
-  &--11 {
-    margin-top: pxtovw-sp(83);
-    @include breakpoint( pc ) {
-      margin-top: pxtovw-pc(100);
-    }
-  }
-
-  &--13 {
-    margin-top: pxtovw-sp(45);
-    @include breakpoint( pc ) {
       margin-top: pxtovw-pc(62);
     }
   }
 
-  &--14 {
+  &--10 {
     margin-top: pxtovw-sp(76);
     @include breakpoint( pc ) {
       margin-top: pxtovw-pc(90);
     }
   }
 
-  &--16 {
+  &--11 {
     margin-top: pxtovw-sp(45);
     @include breakpoint( pc ) {
       margin-top: pxtovw-pc(62);
     }
   }
 
-  &--17 {
+  &--12 {
     margin-top: pxtovw-sp(78);
     @include breakpoint( pc ) {
       margin-top: pxtovw-pc(94);
     }
   }
 
-  &--18 {
+  &--13 {
     margin-top: pxtovw-sp(70);
     @include breakpoint( pc ) {
       margin-top: pxtovw-pc(173);
     }
   }
+}
 
-  &--40 {
-    margin-top: pxtovw-sp(360);
-    @include breakpoint( pc ) {
-      margin-top: pxtovw-pc(173);
+
+.price {
+  .u-margin {
+    &--50 {
+      margin-top: pxtovw-sp(2);
+      @include breakpoint( pc ) {
+        margin-top: pxtovw-pc(2);
+      }
+    }
+
+    &--51 {
+      margin-top: pxtovw-sp(72);
+      @include breakpoint( pc ) {
+        margin-top: pxtovw-pc(10);
+      }
+    }
+
+    &--52 {
+      margin-top: pxtovw-sp(130);
+      @include breakpoint( pc ) {
+        margin-top: pxtovw-pc(100);
+      }
+    }
+
+    &--53 {
+      margin-top: pxtovw-sp(40);
+      @include breakpoint( pc ) {
+        margin-top: pxtovw-pc(40);
+      }
+    }
+
+    &--54 {
+      margin-top: pxtovw-sp(100);
+      @include breakpoint( pc ) {
+        margin-top: pxtovw-pc(40);
+      }
+    }
+
+    &--55 {
+      margin-top: pxtovw-sp(62);
+      @include breakpoint( pc ) {
+        margin-top: pxtovw-pc(40);
+      }
     }
   }
 }
