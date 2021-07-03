@@ -91,4 +91,11 @@
       margin-top: pxtovw-pc(173);
     }
   }
+
+  &--40 {
+    margin-top: pxtovw-sp(360);
+    @include breakpoint( pc ) {
+      margin-top: pxtovw-pc(173);
+    }
+  }
 }

@@ -134,7 +134,7 @@ jQuery(function($) {
 
 
 // スクロール設定
-var option = {
+let option = {
   section : '.js-scroll--area', // 対象を指定
   easing: "swing", // イージングを指定(jQueryのanimation)
   scrollSpeed: 600, // スクロール時の速度
@@ -152,7 +152,7 @@ var option = {
   afterRender:function() {}//Scrollifyの初期化後に発生するコールバック
 };
 
-$(function() {
+jQuery(function($) {
   $.scrollify(option); // scrollifyの実行
 });
 
@@ -166,6 +166,27 @@ $(document).ready(function () {
       scrollDuration: 600,
   });
 });
+
+
+
+//画像のモーダルウィンドウ
+jQuery(function($) {
+  $(".js-modal").modaal({
+    type: 'image',
+    overlay_close:true,//モーダル背景クリック時に閉じるか
+    background:'#707070',
+
+    before_open:function(){// モーダルが開く前に行う動作
+      $('html').css('overflow-y','hidden');/*縦スクロールバーを出さない*/
+      $(".p-btn--menu-sub").toggleClass("is-close");//なぜかメニューボタンが前面に出るのでクラス名を付与
+    },
+    after_close:function(){// モーダルが閉じた後に行う動作
+      $('html').css('overflow-y','scroll');/*縦スクロールバーを出す*/
+      $(".p-btn--menu-sub").toggleClass("is-close");
+    }
+  });
+});
+
 
 
 
