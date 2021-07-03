@@ -3,8 +3,11 @@
 // ------------------------------
 .p-page-ttl {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
+  @include breakpoint( pc ) {
+    top: 50%;
+  }
 
   &__heading {
     @include font-didot;
@@ -81,6 +84,33 @@
         padding: pxtovw-pc(40) pxtovw-pc(140);
         background: rgba(#ffffff, .58);
         // background: red;
+      }
+    }
+  }
+}
+
+
+.price {
+  .p-page-ttl {
+    top: 48%;
+
+    @include breakpoint( pc ) {
+      top: 42.5%;
+      left: 48.9%;
+    }
+
+    &__heading {
+      @include breakpoint( pc ) {
+        letter-spacing: 3.6rem;
+        text-indent: 3.6rem;
+      }
+    }
+
+    &__txt {
+      @include breakpoint( pc ){
+        transform: translate(-49%, 93%);
+        letter-spacing: .45rem;
+        text-indent: .45rem;
       }
     }
   }

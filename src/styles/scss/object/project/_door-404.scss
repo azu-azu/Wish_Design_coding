@@ -1,24 +1,55 @@
-.p-door-404 {
-  @extend %boxbase;
+.p-door404 {
+  width: 100%;
+  height: 100%;
 
-  width: pxtovw-sp(139);
-  height: pxtovw-sp(224);
-  border-radius: 10px;
-  pointer-events: none;
+  // ドア全体
+  &__door {
+    @extend %boxbase;
+    pointer-events: none;
+    width: pxtovw-sp(139);
+    height: pxtovw-sp(224);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: pxtovw-sp(85);
 
-  position: absolute;
-  top: 20.5%;
-  left: 31.7%;
+    @include breakpoint( pc ) {
+      width: pxtovw-pc(178);
+      height: pxtovw-pc(285);
+      margin-top: pxtovw-pc(74);
+    }
 
+    // 404の番号
+    &__num {
+      font-size: pxtovw-sp(17);
+      letter-spacing: .5rem;
+      text-indent: .5rem;
+      text-align: center;
+      margin-top: pxtovw-sp(35);
 
-  // 404
-  &__num {
-    font-size: pxtovw-sp(17);
-    position: absolute;
-    top: 15%;
-    left: 33%;
-    letter-spacing: .5rem;
-    text-indent: .5rem;
+      @include breakpoint( pc ) {
+        font-size: pxtovw-pc(22);
+        margin-top: pxtovw-pc(43);
+      }
+    }
+
+    // ドアノブ
+    &__knob {
+      @extend %boxbase;
+      pointer-events: none;
+      width: pxtovw-sp(9);
+      height: pxtovw-sp(9);
+
+      position: absolute;
+      top: 48%;
+      left: 10%;
+
+      @include breakpoint( pc ) {
+        width: pxtovw-pc(12);
+        height: pxtovw-pc(12);
+        top: 48%;
+        left: 10%;
+      }
+    }
   }
 
   // お探しのページはありません。
@@ -26,5 +57,10 @@
     letter-spacing: .55rem;
     text-indent: .55rem;
     text-align: center;
+    margin-top: pxtovw-sp(50);
+
+    @include breakpoint( pc ) {
+      margin-top: pxtovw-pc(30);
+    }
   }
 }

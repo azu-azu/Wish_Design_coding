@@ -1,3 +1,9 @@
 .c-copyright {
   display: block;
 }
+
+.page404 {
+  .c-copyright {
+    margin-top: pxtovw-pc(20);
+  }
+}

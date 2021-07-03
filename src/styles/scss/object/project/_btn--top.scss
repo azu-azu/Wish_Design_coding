@@ -1,10 +1,14 @@
 .p-btn--top {
   @extend .p-btn--base;
-  position: absolute;
-  top: 71.2%;
-
   width: pxtovw-sp(143);
   height: pxtovw-sp(32);
+  margin-top: pxtovw-sp(65);
+
+  @include breakpoint( pc ) {
+    width: pxtovw-pc(143);
+    height: pxtovw-pc(32);
+    margin-top: pxtovw-pc(90);
+  }
 
   p {
     letter-spacing: .4rem;

@@ -68,3 +68,35 @@
 }
 
 
+.price {
+  .u-padding {
+    &--50 {
+      padding-top: pxtovw-sp(83);
+
+      @include breakpoint( pc ) {
+        // padding-top: pxtovw-pc();
+      }
+    }
+
+    // &--01 {
+    //   padding-top: pxtovw-sp();
+    //   padding-bottom: pxtovw-sp();
+
+    //   @include breakpoint( pc ) {
+    //     padding-top: pxtovw-pc();
+    //     padding-bottom: pxtovw-pc();
+    //   }
+    // }
+
+    // &--01 {
+    //   padding-top: pxtovw-sp();
+    //   padding-bottom: pxtovw-sp();
+
+    //   @include breakpoint( pc ) {
+    //     padding-top: pxtovw-pc();
+    //     padding-bottom: pxtovw-pc();
+    //   }
+    // }
+  }
+}
+

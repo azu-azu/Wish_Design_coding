@@ -5,7 +5,6 @@
   background-image: url(../images/home_mainvisual_sp.svg);
   background-position-x: 0%;
   background-position-y: -7%;
-  background-size: cover;
 
   @include breakpoint( pc ) {
     width: 100%;
@@ -20,5 +19,9 @@
 .price {
   .p-mainvisual {
     background-image: url(../images/price_mainvisual_sp.svg);
+
+    @include breakpoint( pc ) {
+      background-image: url(../images/price_mainvisual_pc.svg);
+    }
   }
 }
