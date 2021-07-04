@@ -1,0 +1,16 @@
+.p-profile {
+  margin: auto;
+  text-align: center;
+
+  p {
+    line-height: 2.6rem;
+    letter-spacing: .6rem;
+    text-indent: .6rem;
+
+    @include breakpoint( pc ){
+      line-height: 3.5rem;
+      letter-spacing: .3em;
+      text-indent: .3em;
+    }
+  }
+}

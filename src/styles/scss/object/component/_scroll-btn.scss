@@ -19,8 +19,11 @@
       transform: rotate(135deg);
 
       @include breakpoint( pc ) {
-        top: 86%;
-        left: 48.5%;
+        // top: 92.5%;
+        // left: 48.7%;
+        top: unset;
+        left: unset;
+        margin-top: pxtovw-pc(280);
         width: pxtovw-pc(35);
         height: pxtovw-pc(35);
       }

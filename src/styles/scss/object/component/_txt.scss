@@ -53,11 +53,19 @@
   }
 }
 
-
+// プライスページ
 .price {
   .c-txt {
     &--content {
       line-height: 2.4;
+      letter-spacing: .39rem;
+      text-indent: .39rem;
+      
+      @include breakpoint( pc ) {
+        line-height: 2.35;
+        letter-spacing: .39rem;
+        text-indent: .39rem;
+      }
     }
   }
 }

@@ -1,0 +1,20 @@
+.p-timeline{
+  margin: auto;
+  margin-top: pxtovw-sp(39);
+
+  @include breakpoint( pc ){
+    margin-top: 120px;
+  }
+
+  .c-layout-list{
+    max-width: 809px;
+    margin: auto;
+    text-align: left;
+
+    &__item{
+      .c-btn--circle {
+        background-color: $base-color;
+      }
+    }
+  }
+}

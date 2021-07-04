@@ -17,11 +17,44 @@
   }
 }
 
+
+.about {
+  .p-ttl {
+    &--content {
+      letter-spacing: .9rem;
+      text-indent: .9rem;
+      line-height: 1.7;
+
+      @include breakpoint( pc ) {
+        font-size: pxtovw-pc(30);
+        letter-spacing: .24em;
+        text-indent: .24em;
+        }
+
+      &--02 {
+        @extend .p-ttl--content;
+        letter-spacing: 1.5rem;
+        text-indent: 1.5rem;
+      }
+    }
+  }
+}
+
+
+
+
+
 .price {
   .p-ttl {
     &--content {
-      letter-spacing: .5rem;
+      letter-spacing: .68rem;
       text-indent: .5rem;
+
+      @include breakpoint( pc ) {
+        font-size: pxtovw-pc(30);
+        letter-spacing: .9rem;
+        text-indent: .9rem;
+      }
     }
   }
 }
