@@ -1,0 +1,14 @@
+	/* about内使用 */
+	.p-btn--circle {
+		position: relative;
+		border-radius: 50%;
+		box-shadow: 12px 13px 9px -10px rgba(185, 185, 185, .3) inset, 
+		-10px -10px 15px -10px #ffffff inset;
+		background-color: $base-color;
+		width: 96px;
+		height: 96px;
+
+		text-align: center;
+		line-height: 96px;
+		// margin: auto;
+	}

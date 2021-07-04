@@ -1,9 +1,13 @@
-// scrollify実行のためのmargin設定
-.c-section-content {
-  @include breakpoint( pc ) {
-    margin: 0 auto;
+// scrollify実行時の中央寄せ
+.home {
+  .c-section-content {
+    @include breakpoint( pc ) {
+      position: absolute;
+      @include transform50;
+    }
   }
 }
+
 
 .price {
   .c-section-content {

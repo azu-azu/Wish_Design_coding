@@ -1,0 +1,22 @@
+.p-txt--qanda {
+  // margin-right: pxtovw-sp(20);
+  // margin-left: pxtovw-sp(20);
+  text-align: center;
+  font-size: pxtovw-sp(15);
+  line-height: 1.75;
+  letter-spacing: .44rem;
+  text-indent: .44rem;
+
+  @include breakpoint( pc ) {
+    margin-right: pxtovw-pc(212);
+    margin-left: pxtovw-pc(212);
+
+    width: pxtovw-pc(754);
+    text-align: left;
+
+    font-size: pxtovw-pc(15);
+    line-height: 2.2;
+    letter-spacing: .44rem;
+    text-indent: .44rem;
+  }
+}

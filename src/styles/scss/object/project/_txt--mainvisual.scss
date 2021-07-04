@@ -1,6 +1,6 @@
 .p-txt--mainvisual {
   position: absolute;
-  top: 24.7%;
+  top: 20.7%;
   margin-right: pxtovw-sp(20);
   margin-left: pxtovw-sp(20);
   text-align: center;
@@ -11,6 +11,12 @@
   text-indent: .44rem;
 
   @include breakpoint( pc ) {
+    margin-right: pxtovw-pc(212);
+    margin-left: pxtovw-pc(212);
+
+    width: pxtovw-pc(754);
+    text-align: left;
+
     font-size: pxtovw-pc(15);
     line-height: 2.2;
     letter-spacing: .44rem;
@@ -18,5 +24,28 @@
 
     top: 13.6%;
     left: 24.3%;
+  }
+}
+
+
+.about {
+  .p-txt--mainvisual {
+    top: 8.9%;
+
+    @include breakpoint( pc ) {
+      top: 8.2%;
+      left: 30.5%;
+      width: auto;
+      margin-right: unset;
+      margin-left: unset;
+      text-align: center;
+    }
+  }
+}
+
+
+.qanda {
+  .p-txt--mainvisual {
+    top: 65%;
   }
 }

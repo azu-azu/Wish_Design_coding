@@ -32,11 +32,6 @@ jQuery(function($){
 })
 
 
-
-
-
-
-
 // スリック
 jQuery(function($) {
 $('.js-slick').slick({
@@ -59,12 +54,6 @@ $('.js-slick').slick({
   ]
 });
 });
-
-
-
-
-
-
 
 
 // ヘッダータイトル：スクロールしたら消える
@@ -100,9 +89,6 @@ jQuery(function($){
 		});
 	});
 });
-
-
-
 
 
 
@@ -155,41 +141,6 @@ let option = {
 jQuery(function($) {
   $.scrollify(option); // scrollifyの実行
 });
-
-
-
-// ボタンを押すと、.section-scrollへ移動
-$(document).ready(function () {
-  $(".section-scroll").sectionScroller({
-      scrollerButton: "#section-scroller-button",
-      scrollType: "easeInOutExpo", // requires jQuery Easing Plugin
-      scrollDuration: 600,
-  });
-});
-
-
-
-//画像のモーダルウィンドウ
-jQuery(function($) {
-  $(".js-modal").modaal({
-    type: 'image',
-    overlay_close:true,//モーダル背景クリック時に閉じるか
-    background:'#707070',
-
-    before_open:function(){// モーダルが開く前に行う動作
-      $('html').css('overflow-y','hidden');/*縦スクロールバーを出さない*/
-      $(".p-btn--menu-sub").toggleClass("is-close");//なぜかメニューボタンが前面に出るのでクラス名を付与
-    },
-    after_close:function(){// モーダルが閉じた後に行う動作
-      $('html').css('overflow-y','scroll');/*縦スクロールバーを出す*/
-      $(".p-btn--menu-sub").toggleClass("is-close");
-    }
-  });
-});
-
-
-
-
 
 
 

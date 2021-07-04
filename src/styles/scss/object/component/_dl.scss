@@ -1,0 +1,33 @@
+.c-dl {
+	&--level1{
+		margin-left: pxtovw-sp(48);
+		padding-left: pxtovw-sp(14);
+		border-left: solid 1px $timeline-color;
+		line-height: 1.9;
+
+		@include breakpoint( pc ){
+			margin-left: -48px;
+			padding: 0;
+			padding-left: calc( 14px + 48px );
+			margin-top: 37.5px;
+		}
+
+		dt, dd {
+			letter-spacing: .4em;
+		}
+	}
+
+	&--pro{
+		letter-spacing: .3em;
+		text-indent: .3em;
+		font-size: 1.5rem;
+
+		@include breakpoint( pc ){
+			padding-left: 75px;
+		}
+
+		dd{
+			line-height: 3.5rem;
+		}
+	}
+}

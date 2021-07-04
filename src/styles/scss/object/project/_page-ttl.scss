@@ -1,12 +1,21 @@
 // ------------------------------
 // メインビジュアル上のタイトル
 // ------------------------------
+.index {
+  .p-page-ttl {
+    &__txt {
+      @include font-toppan;//トップページのみフォント違う
+    }
+  }
+}
+
+
 .p-page-ttl {
   position: absolute;
   top: 45%;
   left: 50%;
   @include breakpoint( pc ) {
-    top: 50%;
+    // top: 117.5%;
   }
 
   &__heading {
@@ -56,7 +65,7 @@
     position: absolute;
     @include transform50;
 
-    @include font-toppan;
+    @include font-yumincho;
     line-height: 26 / 15;
     letter-spacing: 0.25rem;
     white-space: nowrap;
@@ -90,6 +99,43 @@
 }
 
 
+// ------------------------------
+// アバウトページ
+// ------------------------------
+.about {
+  .p-page-ttl {
+    top: 47.5%;
+
+    @include breakpoint( pc ) {
+      top: 41.9%;
+      left: 49.9%;
+    }
+
+    &__heading {
+      @include breakpoint( pc ) {
+        letter-spacing: 3.6rem;
+        text-indent: 3.6rem;
+      }
+    }
+
+    &__txt {
+      transform: translate(-50%, 30%);
+
+      @include breakpoint( pc ){
+        transform: translate(-50%, 121%);
+        letter-spacing: .45rem;
+        text-indent: .45rem;
+      }
+    }
+  }
+}
+
+
+
+
+// ------------------------------
+// プライスページ
+// ------------------------------
 .price {
   .p-page-ttl {
     top: 48%;
@@ -109,6 +155,40 @@
     &__txt {
       @include breakpoint( pc ){
         transform: translate(-49%, 93%);
+        letter-spacing: .45rem;
+        text-indent: .45rem;
+      }
+    }
+  }
+}
+
+
+
+// ------------------------------
+// Q&Aページ
+// ------------------------------
+.qanda {
+  .p-page-ttl {
+    top: 47.5%;
+
+    @include breakpoint( pc ) {
+      top: 51.5%;
+      // left: 48.9%;
+    }
+
+    &__heading {
+      letter-spacing: -0.4rem;
+      text-indent: -0.4rem;
+
+      @include breakpoint( pc ) {
+        letter-spacing: .7rem;
+        text-indent: .7rem;
+      }
+    }
+
+    &__txt {
+      @include breakpoint( pc ){
+        transform: translate(-49%, 130%);
         letter-spacing: .45rem;
         text-indent: .45rem;
       }

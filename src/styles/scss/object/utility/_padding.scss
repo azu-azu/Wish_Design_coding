@@ -22,7 +22,6 @@
     padding-top: pxtovw-sp(47);
     @include breakpoint( pc ) {
       padding-top: pxtovw-pc(65);
-      padding-bottom: pxtovw-pc(146.5);
     }
   }
 
@@ -68,35 +67,44 @@
 }
 
 
+.about {
+  .u-padding {
+    &--20 {
+      padding-top: pxtovw-sp(15);
+      padding-bottom: pxtovw-sp(19);
+
+      @include breakpoint( pc ) {
+        padding-top: pxtovw-pc(20);
+      }
+    }
+  }
+}
+
+
+
+
+
 .price {
   .u-padding {
     &--50 {
       padding-top: pxtovw-sp(83);
 
       @include breakpoint( pc ) {
-        // padding-top: pxtovw-pc();
+        padding-top: pxtovw-pc(65);
       }
     }
-
-    // &--01 {
-    //   padding-top: pxtovw-sp();
-    //   padding-bottom: pxtovw-sp();
-
-    //   @include breakpoint( pc ) {
-    //     padding-top: pxtovw-pc();
-    //     padding-bottom: pxtovw-pc();
-    //   }
-    // }
-
-    // &--01 {
-    //   padding-top: pxtovw-sp();
-    //   padding-bottom: pxtovw-sp();
-
-    //   @include breakpoint( pc ) {
-    //     padding-top: pxtovw-pc();
-    //     padding-bottom: pxtovw-pc();
-    //   }
-    // }
   }
 }
 
+
+.qanda {
+  .u-padding {
+    &--60 {
+      padding-top: pxtovw-sp(23);
+
+      @include breakpoint( pc ) {
+        padding-top: pxtovw-pc(70);
+      }
+    }
+  }
+}

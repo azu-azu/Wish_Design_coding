@@ -42,28 +42,27 @@
       </header>
 
       <!-- メインビジュアル -->
-      <figure class="l-mainvisual p-mainvisual" data-section-name="mainvisual">
-        <div class="c-section-content">
-
+      <article class="l-mainvisual p-mainvisual js-scroll--area" data-section-name="mainvisual">
+        <section class="c-section-content">
           <div class="p-page-ttl">
             <h1 class="p-page-ttl__heading">Wish Design
-                <div class="p-page-ttl__heading__shadow"></div>
+              <div class="p-page-ttl__heading__shadow"></div>
             </h1>
             <div class="p-page-ttl__txt">「オモイ」を「カタチ」に
               <div class="p-page-ttl__txt__shadow"></div>
             </div>
           </div>
-
           <button class="c-scroll-btn" id="section-scroller-button"><span>下へスクロール</span></button>
-        </div>
-      </figure>
+          <!-- <a href="#section-scroll" class="c-scroll-btn" id="section-scroller-button"><span>下へスクロール</span></a> -->
+        </section>
+      </article>
       <!-- ◇----------------------------------------------------------------------------------------------◇ -->
       <main class="l-main">
 
         <!-- :::::::::about::::::::: -->
         <article class="p-home-about">
 
-          <section class="js-scroll--area section-scroll u-padding--00" data-section-name="about">
+          <section class="js-scroll--area p-scroll--area" id="section-scroll" data-section-name="about">
             <div class="c-section-content">
               <h2 class="p-ttl--content">About</h2>
               <p class="c-txt--content u-margin--01">
@@ -79,7 +78,7 @@
             </div>
           </section>
 
-          <article class="u-display-center js-scroll--area u-padding--00-2" data-section-name="about-list">
+          <article class="u-display-center js-scroll--area p-scroll--area" data-section-name="about-list">
             <div class="c-section-content">
               <ul class="p-home-about__list">
                 <li class="p-home-about--box fadein js-fadein"><span js-fitty>あなたの話を<br>聞かせてください</span></li>
@@ -95,7 +94,7 @@
         </article>
 
         <!-- :::::::::works::::::::: -->
-        <article class="p-home-works js-scroll--area u-padding--01" data-section-name="works">
+        <article class="p-home-works js-scroll--area p-scroll--area" data-section-name="works">
           <div class="c-section-content">
             <h2 class="p-ttl--content">Works</h2>
             <p class="c-txt--content u-margin--03 sp-none">今までいろんなお客様の「オモイ」を「カタチ」に変えてきました。</p>
@@ -139,7 +138,7 @@
 
 
         <!-- :::::::::flow::::::::: -->
-        <article class="p-home-flow js-scroll--area u-padding--02" data-section-name="flow">
+        <article class="p-home-flow js-scroll--area p-scroll--area" data-section-name="flow">
           <div class="c-section-content">
             <h2 class="p-ttl--content">Flow</h2>
             <p class="c-txt--content-flow u-margin--06">
@@ -163,7 +162,7 @@
 
 
         <!-- :::::::::price::::::::: -->
-        <article class="p-home-price js-scroll--area u-padding--03" data-section-name="price">
+        <article class="p-home-price js-scroll--area p-scroll--area" data-section-name="price">
           <div class="c-section-content">
             <h2 class="p-ttl--content">Price</h2>
             <p class="c-txt--content u-margin--09">
@@ -177,7 +176,7 @@
         </article>
 
         <!-- :::::::::contact::::::::: -->
-        <article class="p-home-contact js-scroll--area u-padding--04" data-section-name="contact">
+        <article class="p-home-contact js-scroll--area p-scroll--area" data-section-name="contact">
           <div class="c-section-content">
             <h2 class="p-ttl--content">Contact</h2>
             <p class="c-txt--content-contact u-margin--11">
@@ -233,10 +232,13 @@
       </nav>
     </aside>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/fitty.min.js"></script>
     <script src="js/jquery.scrollify.js"></script>
+    <script src="js/sectionscroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="js/sectionscroller.min.js"></script>
     <script src="js/script.js"></script>

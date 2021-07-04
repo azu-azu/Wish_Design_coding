@@ -16,12 +16,36 @@
 	}
 }
 
+
+.about {
+  .p-mainvisual {
+    background-image: url(../images/about_mainvisual_sp.svg);
+
+    @include breakpoint( pc ) {
+      background-image: url(../images/about_mainvisual_pc.svg);
+    }
+  }
+}
+
+
+
 .price {
   .p-mainvisual {
     background-image: url(../images/price_mainvisual_sp.svg);
 
     @include breakpoint( pc ) {
       background-image: url(../images/price_mainvisual_pc.svg);
+    }
+  }
+}
+
+
+.qanda {
+  .p-mainvisual {
+    background-image: url(../images/qa_mainvisual_sp.svg);
+
+    @include breakpoint( pc ) {
+      background-image: url(../images/qa_mainvisual_pc.svg);
     }
   }
 }
