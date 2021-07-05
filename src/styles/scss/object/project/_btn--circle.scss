@@ -1,14 +1,21 @@
 	/* about内使用 */
 	.p-btn--circle {
-		position: relative;
-		border-radius: 50%;
-		box-shadow: 12px 13px 9px -10px rgba(185, 185, 185, .3) inset, 
-		-10px -10px 15px -10px #ffffff inset;
-		background-color: $base-color;
-		width: 96px;
-		height: 96px;
+		@extend %boxbase;
+		pointer-events: none;
+		width: pxtovw-sp(96);
+		height: pxtovw-sp(96);
 
 		text-align: center;
-		line-height: 96px;
-		// margin: auto;
+		font-size: pxtovw-sp(15);
+		letter-spacing: .2rem;
+		text-indent: .2rem;
+		line-height: pxtovw-sp(96);
+
+		@include breakpoint( pc ){
+			font-size: pxtovw-pc(15);
+			width: pxtovw-pc(96);
+			height: pxtovw-pc(96);
+			line-height: pxtovw-pc(96);
+			grid-row: 1;
+		}
 	}

@@ -126,7 +126,7 @@
     &--24 {
       margin-top: pxtovw-sp(38);
       @include breakpoint( pc ) {
-        margin-top: pxtovw-pc(50);
+        margin-top: pxtovw-pc(35);
       }
     }
 
@@ -142,29 +142,43 @@
     &--26 {
       margin-top: pxtovw-sp(49);
       @include breakpoint( pc ) {
-        margin-top: pxtovw-pc(0);
+        margin-top: pxtovw-pc(10);
       }
     }
 
-
     &--27 {
+      margin-top: pxtovw-sp(15);
       @include breakpoint( pc ) {
-        margin-top: pxtovw-pc(10);
+        margin-top: pxtovw-pc(8);
       }
     }
 
 
     &--28 {
-      margin-top: pxtovw-sp(60);
+      margin-top: pxtovw-sp(39);
       @include breakpoint( pc ) {
-        margin-top: pxtovw-pc(50);
+        margin-top: pxtovw-pc(125);
       }
     }
 
     &--29 {
+      @include breakpoint( pc ) {
+        margin-top: pxtovw-pc(8);
+      }
+    }
+
+    &--30 {
+      margin-top: pxtovw-sp(60);
+      @include breakpoint( pc ) {
+        margin-top: pxtovw-pc(128);
+      }
+    }
+
+    &--41 {
       margin-top: pxtovw-sp(72);
       @include breakpoint( pc ) {
         margin-top: pxtovw-pc(50);
+        margin-bottom: pxtovw-pc(100);
       }
     }
   }

@@ -33,12 +33,14 @@
     top: 8.9%;
 
     @include breakpoint( pc ) {
+      @include transform50;
+      transform: translate(-78%, 71%);
       top: 8.2%;
-      left: 30.5%;
-      width: auto;
-      margin-right: unset;
-      margin-left: unset;
       text-align: center;
+      // left: 30.5%;
+      // width: auto;
+      // margin-right: unset;
+      // margin-left: unset;
     }
   }
 }
