@@ -1,12 +1,12 @@
 // scrollify実行時の中央寄せ
-.home {
-  .c-section-content {
-    @include breakpoint( pc ) {
-      position: absolute;
-      @include transform50;
-    }
-  }
-}
+// .home {
+//   .c-section-content {
+//     @include breakpoint( pc ) {
+//       // position: absolute;
+//       // @include transform50;
+//     }
+//   }
+// }
 
 
 .price {

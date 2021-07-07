@@ -11,9 +11,16 @@
 
   ul{
     li{
+      font-size: pxtovw-sp(15);
       letter-spacing: .4em;
       text-indent: .4em;
       line-height: 3.5rem;
+
+      @include breakpoint( pc ) {
+        font-size: pxtovw-pc(15);
+        letter-spacing: .24em;
+        text-indent: .24em;
+        }
     }
   }
 
@@ -22,8 +29,8 @@
     letter-spacing: .5rem;
 
     @include breakpoint( pc ){
-      letter-spacing: .3em;
-      text-indent: .3em;
+      letter-spacing: .45vw;
+      text-indent: .45vw;
     }
   }
 }

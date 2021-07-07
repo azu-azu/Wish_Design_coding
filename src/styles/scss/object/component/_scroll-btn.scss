@@ -9,7 +9,7 @@
     &::before {
       position: absolute;
       content: '';
-      top: 73%;
+      top: 81%;
       left: 47.5%;
       width: pxtovw-sp(22);
       height: pxtovw-sp(22);
@@ -19,10 +19,8 @@
       transform: rotate(135deg);
 
       @include breakpoint( pc ) {
-        // top: 92.5%;
-        // left: 48.7%;
-        top: unset;
-        left: unset;
+        top: 51%;
+        left: 48.7%;
         margin-top: pxtovw-pc(280);
         width: pxtovw-pc(35);
         height: pxtovw-pc(35);
