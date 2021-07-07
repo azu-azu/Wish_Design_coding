@@ -1,53 +1,99 @@
 .p-txt--mainvisual {
   position: absolute;
-  top: 20.7%;
-  margin-right: pxtovw-sp(20);
-  margin-left: pxtovw-sp(20);
+  margin: 0 pxtovw-sp(20) 0 pxtovw-sp(20);
+  width: calc(100vw - 40px);
   text-align: center;
 
   font-size: pxtovw-sp(15);
   line-height: 1.75;
-  letter-spacing: .44rem;
-  text-indent: .44rem;
+  letter-spacing: pxtovw-sp(5);
+  text-indent: pxtovw-sp(5);
 
   @include breakpoint( pc ) {
-    margin-right: pxtovw-pc(212);
-    margin-left: pxtovw-pc(212);
+    width: pxtovw-pc(1000);
+    left: 50%;
+    transform: translateX(-50%);
 
-    width: pxtovw-pc(754);
-    text-align: left;
+    margin: unset;
+    margin-top: pxtovw-pc(107);
 
     font-size: pxtovw-pc(15);
     line-height: 2.2;
-    letter-spacing: .44rem;
-    text-indent: .44rem;
-
-    top: 13.6%;
-    left: 24.3%;
+    letter-spacing: pxtovw-pc(4.4);
+    text-indent: pxtovw-pc(4.4);
   }
 }
 
 
+
 .about {
   .p-txt--mainvisual {
-    top: 8.9%;
+    transform: translate(-55%, 83%);
 
     @include breakpoint( pc ) {
-      @include transform50;
-      transform: translate(-78%, 71%);
-      top: 8.2%;
-      text-align: center;
-      // left: 30.5%;
-      // width: auto;
-      // margin-right: unset;
-      // margin-left: unset;
+      transform: translate(-50%, 0);
     }
   }
 }
 
 
+.flow {
+  .p-txt--mainvisual {
+    margin-top: pxtovw-sp(445);
+
+    @include breakpoint( pc ) {
+      margin-top: pxtovw-pc(460);
+      width: 100%;
+    }
+  }
+}
+
+
+.price {
+  .p-txt--mainvisual {
+    margin: 0 pxtovw-sp(20) 0 pxtovw-sp(20);
+    top: 66.8%;
+
+    @include breakpoint( pc ) {
+      margin: unset;
+      top: 55.2%;
+    }
+  }
+}
+
+
+
 .qanda {
   .p-txt--mainvisual {
-    top: 65%;
+    margin: 0 pxtovw-sp(20) 0 pxtovw-sp(20);
+    top: 65.2%;
+  }
+}
+
+
+.works {
+  .p-txt--mainvisual {
+    margin: 0 pxtovw-sp(20) 0 pxtovw-sp(20);
+    top: 66.5%;
+
+    @include breakpoint( pc ) {
+      top: 60%;
+      width: 100%;
+      margin: unset;
+    }
+  }
+}
+
+
+.contact {
+  .p-txt--mainvisual {
+    margin-top: pxtovw-sp(1);
+    top: 66.5%;
+
+    @include breakpoint( pc ) {
+      top: 55.6%;
+      margin: unset;
+      width: 100%;
+    }
   }
 }

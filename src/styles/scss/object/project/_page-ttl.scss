@@ -1,29 +1,21 @@
 // ------------------------------
 // メインビジュアル上のタイトル
 // ------------------------------
-.index {
-  .p-page-ttl {
-    &__txt {
-      @include font-toppan;//トップページのみフォント違う
-    }
-  }
-}
-
-
 .p-page-ttl {
   position: absolute;
-  top: 45%;
+  top: 42%;
   left: 50%;
   @include breakpoint( pc ) {
-    // top: 117.5%;
+    top: 50%;
   }
 
+  // タイトル
   &__heading {
     @include font-didot;
     font-size: pxtovw-sp(40);
     line-height: 51 / 40;
-    letter-spacing: .45rem;
-    text-indent: .45rem;
+    letter-spacing: pxtovw-sp(3);
+    text-indent: pxtovw-sp(3);
     white-space: nowrap;
 
     position: absolute;
@@ -34,15 +26,14 @@
     @include breakpoint( pc ) {
       font-size: pxtovw-pc(70);
       transform: translate(-50%, -88%);
-      letter-spacing: 0.79rem;
-      text-indent: .79rem;
+      letter-spacing: pxtovw-pc(8);
+      text-indent: pxtovw-pc(8);
       line-height: 89 / 70;
     }
 
     &__shadow {
       width: 100%;
       height: 100%;
-      // background: red;
       background: rgba(#ffffff, .52);
       padding: 0 pxtovw-sp(10) pxtovw-sp(5) pxtovw-sp(10);
       border-radius: 67px;
@@ -56,24 +47,27 @@
         left: 50%;
         padding: 0 pxtovw-pc(15) pxtovw-pc(7) pxtovw-pc(15);
         background: rgba(#ffffff, .58);
-        // background: red;
       }
     }
   }
 
+  // サブタイトル
   &__txt {
     position: absolute;
     @include transform50;
 
     @include font-yumincho;
+    font-weight: 400;
     line-height: 26 / 15;
-    letter-spacing: 0.25rem;
+    letter-spacing: pxtovw-sp(3);
+    text-indent: pxtovw-sp(3);
     white-space: nowrap;
 
     @include breakpoint( pc ){
       font-size: pxtovw-pc(15);
       transform: translate(-50%, 120%);
-      letter-spacing: 0.15rem;
+      letter-spacing: pxtovw-pc(2);
+      text-indent: pxtovw-pc(2);
     }
 
     &__shadow {
@@ -100,6 +94,21 @@
 
 
 // ------------------------------
+// トップページ
+// ------------------------------
+.home {
+  .p-page-ttl {
+    top: 50%;
+
+    &__txt {
+      @include font-toppan;//トップページのみフォント違う
+    }
+  }
+}
+
+
+
+// ------------------------------
 // アバウトページ
 // ------------------------------
 .about {
@@ -107,14 +116,25 @@
     top: 47.5%;
 
     @include breakpoint( pc ) {
-      top: 41.9%;
-      left: 49.9%;
+      top: 42%;
+      left: 50%;
     }
 
     &__heading {
+      letter-spacing: pxtovw-sp(6);
+      text-indent: pxtovw-sp(6);
+  
       @include breakpoint( pc ) {
-        letter-spacing: 3.6rem;
-        text-indent: 3.6rem;
+        letter-spacing: pxtovw-pc(36);
+        text-indent: pxtovw-pc(36);
+      }
+
+      &__shadow {
+        @include breakpoint( pc ) {
+          height: 76%;
+          top: 86%;
+          border-radius: 50%;
+        }
       }
     }
 
@@ -123,12 +143,48 @@
 
       @include breakpoint( pc ){
         transform: translate(-50%, 121%);
-        letter-spacing: .45rem;
-        text-indent: .45rem;
+        letter-spacing: pxtovw-pc(4.5);
+        text-indent: pxtovw-pc(4.5);
       }
     }
   }
 }
+
+
+// ------------------------------
+// フローページ
+// ------------------------------
+.flow {
+  .p-page-ttl {
+    top: 47.6%;
+
+    @include breakpoint( pc ) {
+      top: 44%;
+      left: 49.9%;
+    }
+
+    &__heading {
+      @include breakpoint( pc ) {
+        letter-spacing: pxtovw-pc(36);
+        text-indent: pxtovw-pc(36);
+      }
+    }
+
+    &__txt {
+      @include breakpoint( pc ) {
+        letter-spacing: pxtovw-pc(5);
+        text-indent: pxtovw-pc(5);
+      }
+
+      &__shadow {
+        @include breakpoint( pc ) {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
 
 
 
@@ -141,22 +197,30 @@
     top: 48%;
 
     @include breakpoint( pc ) {
-      top: 42.5%;
-      left: 48.9%;
+      top: 42.6%;
+      left: 50%;
     }
 
     &__heading {
       @include breakpoint( pc ) {
-        letter-spacing: 3.6rem;
-        text-indent: 3.6rem;
+        letter-spacing: pxtovw-pc(35);
+        text-indent: pxtovw-pc(35);
+      }
+
+      &__shadow {
+        @include breakpoint( pc ) {
+          height: 76%;
+          top: 70%;
+          border-radius: 50%;
+        }
       }
     }
 
     &__txt {
       @include breakpoint( pc ){
         transform: translate(-49%, 93%);
-        letter-spacing: .45rem;
-        text-indent: .45rem;
+        letter-spacing: pxtovw-pc(5);
+        text-indent: pxtovw-pc(5);
       }
     }
   }
@@ -173,24 +237,135 @@
 
     @include breakpoint( pc ) {
       top: 51.5%;
-      // left: 48.9%;
     }
 
     &__heading {
-      letter-spacing: -0.4rem;
-      text-indent: -0.4rem;
+      letter-spacing: pxtovw-sp(-3);
+      text-indent: pxtovw-sp(-3);
 
       @include breakpoint( pc ) {
-        letter-spacing: .7rem;
-        text-indent: .7rem;
+        letter-spacing: pxtovw-pc(8);
+        text-indent: pxtovw-pc(8);
+      }
+
+      &__shadow {
+        @include breakpoint( pc ) {
+          height: 116%;
+          top: 54%;
+          border-radius: 50%;
+        }
       }
     }
 
     &__txt {
       @include breakpoint( pc ){
         transform: translate(-49%, 130%);
-        letter-spacing: .45rem;
-        text-indent: .45rem;
+        letter-spacing: pxtovw-pc(4);
+        text-indent: pxtovw-pc(4);
+      }
+    }
+  }
+}
+
+
+
+// ------------------------------
+// Worksページ
+// ------------------------------
+.works {
+  .p-page-ttl {
+    top: 47.7%;
+
+    @include breakpoint( pc ) {
+      top: 46.5%;
+    }
+
+    &__heading {
+      
+      @include breakpoint( pc ) {
+        letter-spacing: pxtovw-pc(36);
+        text-indent: pxtovw-pc(36);
+      }
+
+      &__shadow {
+        @include breakpoint( pc ) {
+        }
+      }
+    }
+
+    &__txt {
+      @include breakpoint( pc ){
+        letter-spacing: pxtovw-pc(5);
+        text-indent: pxtovw-pc(5);
+      }
+    }
+  }
+}
+
+
+
+// ------------------------------
+// contactページ
+// ------------------------------
+.contact {
+  .p-page-ttl {
+    top: 47.7%;
+
+    @include breakpoint( pc ) {
+      top: 42.3%;
+    }
+
+    &__heading {
+      @include breakpoint( pc ) {
+        letter-spacing: pxtovw-pc(37);
+        text-indent: pxtovw-pc(37);
+      }
+
+      &__shadow {
+        @include breakpoint( pc ) {
+        }
+      }
+    }
+
+    &__txt {
+      @include breakpoint( pc ){
+        letter-spacing: pxtovw-pc(5);
+        text-indent: pxtovw-pc(5);
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+
+// ------------------------------
+// mediaページ
+// ------------------------------
+.media {
+  .p-page-ttl {
+    top: 48%;
+
+    @include breakpoint( pc ) {
+      top: 51.7%;
+    }
+
+    &__heading {
+      @include breakpoint( pc ) {
+        letter-spacing: pxtovw-pc(35);
+        text-indent: pxtovw-pc(35);
+      }
+
+      &__shadow {
+        @include breakpoint( pc ) {
+        }
+      }
+    }
+
+    &__txt {
+      @include breakpoint( pc ){
+        letter-spacing: pxtovw-pc(5);
+        text-indent: pxtovw-pc(5);
       }
     }
   }

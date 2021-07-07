@@ -10,7 +10,7 @@
   &--02 {
     margin-top: pxtovw-sp(80);
     @include breakpoint( pc ) {
-      margin-top: pxtovw-pc(84);
+      margin-top: pxtovw-pc(91);
     }
   }
 
@@ -35,10 +35,11 @@
     }
   }
 
+  // はじめてサイトをお持ちになるお客様でも
   &--06 {
     margin-top: pxtovw-sp(45);
     @include breakpoint( pc ) {
-      margin-top: pxtovw-pc(60);
+      margin-top: pxtovw-pc(62);
     }
   }
 
@@ -86,8 +87,10 @@
 
   &--13 {
     margin-top: pxtovw-sp(70);
+    padding-bottom: pxtovw-sp(70);
     @include breakpoint( pc ) {
       margin-top: pxtovw-pc(173);
+      padding-bottom: pxtovw-pc(30);
     }
   }
 }
@@ -102,10 +105,11 @@
       }
     }
 
+    // WishDesignのできること
     &--21 {
       margin-top: pxtovw-sp(27);
       @include breakpoint( pc ) {
-        margin-top: pxtovw-pc(50);
+        margin-top: pxtovw-pc(55);
       }
     }
 
@@ -168,21 +172,36 @@
     }
 
     &--30 {
-      margin-top: pxtovw-sp(60);
+      margin-top: pxtovw-sp(40);
       @include breakpoint( pc ) {
         margin-top: pxtovw-pc(128);
       }
     }
+  }
+}
 
-    &--41 {
-      margin-top: pxtovw-sp(72);
+
+
+
+.flow {
+  .u-margin {
+    &--35 {
+      margin-top: pxtovw-sp(85);
       @include breakpoint( pc ) {
-        margin-top: pxtovw-pc(50);
-        margin-bottom: pxtovw-pc(100);
+        margin-top: pxtovw-pc(225);
+      }
+    }
+
+
+    &--36 {
+      margin-top: pxtovw-sp(76);
+      @include breakpoint( pc ) {
+        margin-top: pxtovw-pc(124);
       }
     }
   }
 }
+
 
 
 

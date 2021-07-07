@@ -4,7 +4,7 @@ function ScrollTimelineAnime(){
     let elemPos = $(this).offset().top;// 上からの高さ取得
     let scroll = $(window).scrollTop();// スクロール値取得
     let windowHeight = $(window).height();// windowの高さ取得
-    let startPoint = 200; //線をスタートさせる位置を指定※レイアウトによって調整してください
+    let startPoint = 300; //線をスタートさせる位置を指定※レイアウトによって調整してください
     if (scroll >= elemPos - windowHeight-startPoint){       
       let H = $(this).outerHeight(true)//liの余白と高さを含めた数値を取得
       //スクロール値から要素までの高さを引いた値を、liの高さの半分のパーセントで出す

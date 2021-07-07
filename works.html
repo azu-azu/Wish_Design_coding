@@ -18,10 +18,6 @@
     <!-- リセットCSS -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 
-    <!-- スリックCSS -->
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-
     <!-- 自作CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -29,7 +25,7 @@
   </head>
   <!-- ◇----------------------------------------------------------------------------------------------◇ -->
 
-  <body class="page404">
+  <body class="works">
     <div class="l-container">
       <header class="l-header u-display-between">
         <span id="js-ttl"><a href="index.html" class="p-ttl--site">Wish Design</a></span>
@@ -37,24 +33,45 @@
           <p>Menu</p><span>サイドバーを開く</span>
         </button><!-- spanの文字はリーダブルのため -->
       </header>
-  <!-- ◇----------------------------------------------------------------------------------------------◇ -->
-      <main class="l-main">
-        <article class="p-door404">
-          <div class="p-door404__door">
-            <p class="p-door404__door__num">404</p>
-            <div class="p-door404__door__knob"></div>
+
+      <!-- メインビジュアル -->
+      <article class="l-mainvisual p-mainvisual">
+        <section class="c-section-content">
+          <div class="p-page-ttl">
+            <h1 class="p-page-ttl__heading">Works
+              <div class="p-page-ttl__heading__shadow"></div>
+            </h1>
+            <div class="p-page-ttl__txt">制作実績
+              <div class="p-page-ttl__txt__shadow"></div>
+            </div>
           </div>
-          <p class="p-door404__txt">お探しのページはありません。</p>
+
+          <div class="p-txt--mainvisual">
+            <p>
+              今までお客様の「オモイ」を「カタチ」に変えてきました。
+            </p>
+          </div>
+        </section>
+      </article>
+      <!-- ◇----------------------------------------------------------------------------------------------◇ -->
+      <main class="l-main">
+
+        <article>
+          <p>これはWorksのページです</p>
 
 
-          <button class="p-btn--top">
-            <p>Top</p><span>トップページへ移動</span>
+          <button class="p-btn--base u-grid u-margin--30">
+            <p>お取引の流れへ</p><span>リンクページへ移動</span>
           </button>
         </article>
       </main>
 
-      <footer class="l-footer u-display-center">
-        <small class="c-copyright">&copy; 2021 Wish Design</small>
+      <footer class="l-footer">
+        <!-- :::::::::追従ボタン::::::::: -->
+        <button class="p-btn--fixed u-grid">
+          <p>Top</p><span>上へ戻る</span>
+        </button>
+        <small class="c-copyright u-margin--31 u-display-center">&copy; 2021 Wish Design</small>
       </footer>
     </div>
 
@@ -87,6 +104,7 @@
         </ul>
       </nav>
     </aside>
+
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/toTopBtn.js"></script>
