@@ -1,26 +1,25 @@
 // ------------------------------
 // ヘッダー部のサイトタイトル
 // ------------------------------
-.p-ttl {
-  &--site {
-    @extend %c-ttl;
+.p-site-ttl {
+  @extend %c-ttl;
 
-      font-size: pxtovw-sp(10);
-      margin-left: pxtovw-sp(10);
-      letter-spacing: .1rem;
-      text-indent: .1rem;
-      white-space: nowrap;
+    font-size: pxtovw-sp(10);
+    margin-left: pxtovw-sp(10);
+    letter-spacing: .1rem;
+    text-indent: .1rem;
+    white-space: nowrap;
 
-    @include breakpoint( pc ) {
-      letter-spacing: 0.24rem;
-      text-indent: .24rem;
-      top: 10%;
-      margin-left: pxtovw-pc(50);
-      font-size: pxtovw-pc(20);
-      white-space: nowrap;
-    }
+  @include breakpoint( pc ) {
+    letter-spacing: 0.24rem;
+    text-indent: .24rem;
+    top: 10%;
+    margin-left: pxtovw-pc(50);
+    font-size: pxtovw-pc(20);
+    white-space: nowrap;
   }
 }
+
 
 // このクラスが付与されると非表示にする
 #js-ttl.fade {

@@ -1,5 +1,5 @@
-.p-btn--top {
-  @extend .p-btn--base;
+.p-page-top {
+  @extend .p-base-btn;
   width: pxtovw-sp(143);
   height: pxtovw-sp(32);
   margin-top: pxtovw-sp(65);

@@ -1,8 +1,8 @@
 // ------------------------------
 // 下層ページのメニューボタン
 // ------------------------------
-  .p-btn--menu-sub {
-    @extend .p-btn--menu;
+  .p-menu-btn-sub {
+    @extend .p-menu-btn;
     left: 9.6%;//leftにしないとホバーの背景色が効かない
     width: pxtovw-sp(98);
     height: pxtovw-sp(31);
@@ -73,6 +73,6 @@
 // js連動:::is-closeになったら……
 // ------------------------------
 // サイドバーを開く
-.p-btn--menu-sub.is-close {
+.p-menu-btn-sub.is-close {
   opacity: 0;
 }

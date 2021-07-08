@@ -1,7 +1,7 @@
 // ------------------------------
 // 追従ボタン
 // ------------------------------
-.p-btn--fixed {
+.p-back-to-top {
   @extend %btnBase;
   width: pxtovw-sp(50);
   height: pxtovw-sp(50);
@@ -65,7 +65,7 @@
 
 
 /*このクラスが付与されると表示する*/
-.p-btn--fixed.is-active {
+.p-back-to-top.is-active {
   opacity: 1;
   visibility: visible;
 }

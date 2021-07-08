@@ -1,4 +1,4 @@
-.p-txt--mainvisual {
+.p-mainvisual-txt {
   position: absolute;
   margin: 0 pxtovw-sp(20) 0 pxtovw-sp(20);
   width: calc(100vw - 40px);
@@ -24,10 +24,8 @@
   }
 }
 
-
-
 .about {
-  .p-txt--mainvisual {
+  .p-mainvisual-txt {
     transform: translate(-55%, 83%);
 
     @include breakpoint( pc ) {
@@ -36,9 +34,8 @@
   }
 }
 
-
 .flow {
-  .p-txt--mainvisual {
+  .p-mainvisual-txt {
     margin-top: pxtovw-sp(445);
 
     @include breakpoint( pc ) {
@@ -50,7 +47,7 @@
 
 
 .price {
-  .p-txt--mainvisual {
+  .p-mainvisual-txt {
     margin: 0 pxtovw-sp(20) 0 pxtovw-sp(20);
     top: 66.8%;
 
@@ -64,7 +61,7 @@
 
 
 .qanda {
-  .p-txt--mainvisual {
+  .p-mainvisual-txt {
     margin: 0 pxtovw-sp(20) 0 pxtovw-sp(20);
     top: 65.2%;
   }
@@ -72,7 +69,7 @@
 
 
 .works {
-  .p-txt--mainvisual {
+  .p-mainvisual-txt {
     margin: 0 pxtovw-sp(20) 0 pxtovw-sp(20);
     top: 66.5%;
 
@@ -86,7 +83,7 @@
 
 
 .contact {
-  .p-txt--mainvisual {
+  .p-mainvisual-txt {
     margin-top: pxtovw-sp(1);
     top: 66.5%;
 

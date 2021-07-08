@@ -94,7 +94,7 @@ jQuery(function($){
 
 // 追従ボタンの表示
 jQuery(function($) {
-  let btn = $('.p-btn--fixed');
+  let btn = $('.p-back-to-top');
   
   //スクロールしてページトップから100に達したらボタンを表示
   $(window).on('load scroll', function(){
