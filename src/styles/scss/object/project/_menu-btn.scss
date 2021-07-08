@@ -1,7 +1,7 @@
 // ------------------------------
 // メニューボタン
 // ------------------------------
-.p-btn--menu {
+.p-menu-btn {
   @extend %btnBase;
   left: 14.3%;//leftにしないとホバーの背景色が効かない
 
@@ -106,8 +106,8 @@
 // メニュー：closeボタン
 // ※ここに記述しないと疑似要素がうまくいかない
 // ------------------------------
-.p-btn--menu--close {
-  @extend .p-btn--menu;
+.p-menu-btn--close {
+  @extend .p-menu-btn;
   left: 46%;
 
   @include breakpoint( pc ) {

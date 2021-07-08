@@ -99,10 +99,6 @@
 .home {
   .p-page-ttl {
     top: 50%;
-
-    &__txt {
-      @include font-toppan;//トップページのみフォント違う
-    }
   }
 }
 

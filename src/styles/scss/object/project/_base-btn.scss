@@ -1,7 +1,7 @@
 // ------------------------------
 // ベース
 // ------------------------------
-.p-btn--base {
+.p-base-btn {
   @extend %btnBase;
   top: unset;
   width: pxtovw-sp(255.9);
